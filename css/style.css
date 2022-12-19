@@ -8,17 +8,155 @@
 
  html,
  body{
-    font-family: poppins, sans-serif;
-    background: #000;
-    color: #fff;
+    font-family: 'poppins', sans-serif;
+    background: #fff;
+    color: #000;
+    width: 100%;
+    height: 100%;
  }
 
  .header{
-  width: 100%;
-  height: 100%;  
+  background: #b2b2ed  
+
  }
+
+.header-content{
+   background: #b2b2ed;
+   color: #fff;
+   width: 100%;
+}
+
+
 
  .logo{
     display: flex;
-    height: 2em;
+    height: 4em;
+    color: #fff;
+    padding: 0;
+    margin: 0;
  }
+
+ nav{
+   display: flex;
+   justify-content: right;
+   cursor: pointer;
+   padding: 10px 20px;
+   margin: 20px 0;
+   
+ }
+ 
+ li{
+   list-style: none;
+ }
+
+.login-btn{
+   border: #fff;
+   border-radius: 3px;
+   font-size: 1.4rem;
+}
+
+.navigation{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.navigation, li, a{
+   display: inline-flex;
+   align-items: center;
+   justify-content: space-evenly;
+   text-align: center;
+   text-decoration: none;
+   margin: 10px 10px 10px 10px;
+   padding-top: 10px;
+   font-size: 1rem;
+   font-weight: 100;
+   z-index: 2;
+
+}
+
+.navigation, li, a:hover{
+   color: blue;
+   text-decoration: ;
+}
+
+ h1{
+   font-size: 3rem;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+ }
+
+ .h1-txt{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+ }
+
+ .btn{
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   padding: 4px;
+   margin: 10px;
+   gap: 100px;
+}
+
+.btn .btn-download{
+box-sizing: border-box;
+   border-radius: 20px;
+   box-shadow: #fff;
+   color: #000;
+   font-size: 1.5rem;
+   box-sizing: border-box;
+   border: 2px solid #fff;
+   text-decoration: none;
+   font-weight: 100;
+   background: #fff;
+   line-height: 1.2;
+}
+
+.btn .btn-open{
+   box-sizing: border-box;
+      border-radius: 20px;
+      box-shadow: #fff;
+      color: #fff;
+      font-size: 1.5rem;
+      box-sizing: border-box;
+      border: 2px solid #000;
+      text-decoration: none;
+      font-weight: 100;
+      background: #000;
+      line-height: 1.2;
+   }
+
+   .img-2 .img-3{
+      display: flex;
+      flex-direction: row;
+   }
+
+   @media(min-width: 1068px){
+      
+      .btn{
+         border-radius: 20px;
+      }
+      .navigation ul li a{
+         font-size: 2rem;
+      }
+   }
+
+   @media(max-width: 780px){
+      .logo{
+         font-size: 1rem;
+      }
+      .btn{
+         margin: 20px 10px 20px 10px;
+      }
+   }
