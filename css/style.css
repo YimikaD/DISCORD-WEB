@@ -69,17 +69,16 @@
    justify-content: space-evenly;
    text-align: center;
    text-decoration: none;
-   margin: 10px 10px 10px 10px;
+   margin: 10px;
    padding-top: 10px;
    font-size: 1rem;
-   font-weight: 100;
-   z-index: 2;
+   font-weight: 10;
+   color: beige;
 
 }
 
 .navigation, li, a:hover{
    color: blue;
-   text-decoration: ;
 }
 
  h1{
@@ -89,6 +88,7 @@
    align-items: center;
    text-align: center;
    justify-content: center;
+   color: #000;
  }
 
  .h1-txt{
@@ -107,11 +107,12 @@
    padding: 4px;
    margin: 10px;
    gap: 100px;
+   top: 20;
 }
 
 .btn .btn-download{
 box-sizing: border-box;
-   border-radius: 20px;
+   border-radius: 90px;
    box-shadow: #fff;
    color: #000;
    font-size: 1.5rem;
@@ -121,6 +122,8 @@ box-sizing: border-box;
    font-weight: 100;
    background: #fff;
    line-height: 1.2;
+   position: relative;
+   top: 100%;
 }
 
 .btn .btn-open{
@@ -148,7 +151,10 @@ box-sizing: border-box;
          border-radius: 20px;
       }
       .navigation ul li a{
-         font-size: 2rem;
+         font-size: 1rem;
+         justify-content: center;
+         top: 0;
+         right: 10;
       }
    }
 
