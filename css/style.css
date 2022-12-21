@@ -18,9 +18,13 @@ html,
     background: #fff;
     color: #000;
     width: 100%;
+    height: 100%;
  }
 
+ /* HEADER */
  .header{
+   width: 100%;
+   height: 50%;
   background: var(--color-1);  
 
  }
@@ -40,6 +44,7 @@ html,
     margin: 0;
  }
 
+ /* Nav */
  nav{
    display: flex;
    justify-content: right;
@@ -53,12 +58,7 @@ html,
    list-style: none;
  }
 
-.login-btn{
-   border: #fff;
-   border-radius: 3px;
-   font-size: 1.4rem;
-}
-
+/* NAVIGATION */
 .navigation{
    display: flex;
    flex-direction: row;
@@ -101,6 +101,12 @@ html,
    justify-content: center;
    text-align: center;
  }
+
+ /* Button */
+ .login-btn{font-size: 2.3rem;
+   border: #fff;
+   border-radius: 3px;
+}
 
  .btn{
    display: flex;
@@ -149,12 +155,13 @@ box-sizing: border-box;
       grid-template-columns: 1fr 1fr;
    }
 
+   /* SECTION */
 .section{
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 100px;
-   margin-top: 60px;
+   padding: 5px;
+   margin: 6px;
    background: #fff;
    color: #000;
    height: 100vh;
@@ -222,8 +229,76 @@ box-sizing: border-box;
       color: #000;
       cursor: pointer;
    }
+
+
+   /* DOWNLOAD STYLE */
+    .download{
+      width: 100%;
+      background-color: #000;
+   }
       
-   @media(max-width: 1068px){
+.download h1{
+   font-size: 3.1rem;
+   font-weight: bold;
+   color: whitesmoke;
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   align-items: center;
+   right: 100px;
+}
+
+.download p{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   color: whitesmoke;
+}
+
+.download img{
+   position: relative;
+   top: 10px;
+}
+
+/* footer */
+.footer{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   color: #000;
+   top: 1;
+   left: 0;
+}
+
+.footer-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   top: 1;
+   color: blue;
+}
+
+.place a{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   color: #000;
+}
+
+.product a{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: #000;
+}
+
+/* MEDIA QUERIES */
+/*
+   @media(max-width: 1888px){
       
       .btn{
          border-radius: 2px;
