@@ -35,15 +35,15 @@ html,
    width: 100%;
 }
 
-.header-content nav button ul li .login-btn{
+.logo .login-btn{
    font-size: 2rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
-   align-items: flex-start;
+   align-items: right;
    text-align: center;
 }
-.header-content .navigation li{
+.logo .navigation li a{
    display: flex;
    flex-direction: row;
    justify-content: center;
