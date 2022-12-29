@@ -65,6 +65,7 @@
    font-size: 1.2rem;
    display: flex;
    justify-content: space-between;
+   column-gap: 1rem;
    list-style: none;
    margin: 10px;
    padding: 10px;
@@ -294,6 +295,10 @@ button{
    padding: 1.1rem;
 }
 
+button:hover{
+  color: #adeede;
+  text-decoration: underline;
+}
  .ready{
    font-size: 3rem;
    margin-top: 4.5rem;
@@ -301,17 +306,51 @@ button{
 
  /* MAIN FOOTER */
  .main-footer{
-   background-color: #23272a;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
  }
 
-
- .info{
+ .footer{
+   background-color: #23272a;
    display: flex;
-   flex-direction: column;
-   align-items: left;
+   justify-content: space-between;
+ }
+
+.info-box{
+  display: flex;
+  flex-direction: column;
+}
+
+ .h4-txt{
+  font-size: 2rem;
+  font-family: sans-serif, bold;
+  color: rgb(99, 99, 241);
+ }
+
+.flag{
+  width: 30px;
+}
+
+.social-bar{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  cursor: pointer;
+}
+
+.title{
+  color: rgb(99, 99, 241);
+}
+
+.group:hover{
+  text-decoration: underline;
+}
+/*
+ .info-box{
+   display: grid;
+   grid-column: span 4;
    color: #fff;
-   margin: 2rem;
-   padding: 10px;
  }
 
  .h4-txt{
@@ -333,24 +372,22 @@ button{
  }
 
  /* FOOTER1 */
+ /*
  .footer1, .group1{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
+  
  }
 
 .title1{
    font-size: 1rem;
    color: rgb(99, 99, 241);
+   margin-top: 23rem;
+   margin-right: 58px;
  }
 
  /* FOOTER2 */
+ /*
  .footer2, .group2{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
+   
  }
 
 .title2{
@@ -359,11 +396,9 @@ button{
 }
 
 /* FOOTER3 */
+/*
  .footer3, .group3{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center; 
+   
  }
 
  .title3{
@@ -372,11 +407,9 @@ button{
  }
 
  /* FOOTER4 */
+ /*
  .footer4, .group4{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
+   
  }
 
  .title4{
